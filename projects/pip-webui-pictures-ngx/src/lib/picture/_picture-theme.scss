@@ -1,0 +1,37 @@
+@use 'sass:map';
+@use 'node_modules/@angular/material' as mat;
+
+@mixin color($config) {
+  $foreground: map-get($config, foreground);
+  $background: map-get($config, background);
+
+  .pip-picture {
+    color: mat.get-color-from-palette($foreground, text);
+    background: invert(mat.get-color-from-palette($background, card, 0.054));
+  }
+}
+
+@mixin typography($config-or-theme) {
+}
+
+@mixin _density($config-or-theme) {
+}
+
+@mixin theme($theme-or-color-config) {
+  $theme: mat.private-legacy-get-theme($theme-or-color-config);
+  @include mat.private-check-duplicate-theme-styles($theme, 'pip-webui-pictures-picture') {
+    $color: mat.get-color-config($theme);
+    $density: mat.get-density-config($theme);
+    $typography: mat.get-typography-config($theme);
+
+    @if $color != null {
+      @include color($color);
+    }
+    @if $density != null {
+      @include _density($density);
+    }
+    @if $typography != null {
+      @include typography($typography);
+    }
+  }
+}

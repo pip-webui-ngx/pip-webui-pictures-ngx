@@ -1,0 +1,13 @@
+<h3>{{ 'pipWebuiPicturesNgx.picture-url-dialog.get_image_from_url' | transloco }}</h3>
+<mat-form-field class="input-container">
+  <input matInput placeholder="{{ 'pipWebuiPicturesNgx.picture-url-dialog.url' | transloco }}"
+         [(ngModel)]="imageLink"/>
+</mat-form-field>
+<pip-picture [src]="imageLink" (onImageLoad)="onImageLoad()" (onImageError)="onImageError()"></pip-picture>
+<div class="actions">
+  <div></div>
+  <button mat-button
+          (click)="onClose()">{{ 'pipWebuiPicturesNgx.picture-url-dialog.cancel' | transloco | uppercase }}</button>
+  <button mat-button [disabled]="!imageLoaded"
+          (click)="onSave()">{{ 'pipWebuiPicturesNgx.picture-url-dialog.insert' | transloco | uppercase }}</button>
+</div>

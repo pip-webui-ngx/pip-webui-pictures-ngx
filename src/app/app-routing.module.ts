@@ -8,17 +8,15 @@ import { PictureExampleComponent } from './picture-example/picture-example.compo
 import { PictureListEditExampleComponent } from './picture-list-edit-example/picture-list-edit-example.component';
 
 const appRoutes: Routes = [
-    { path: 'picture', component: PictureExampleComponent },
-    { path: 'collage', component: CollageExampleComponent },
-    { path: 'picture_edit', component: PictureEditExampleComponent },
-    { path: 'picture_list_edit', component: PictureListEditExampleComponent },
-    { path: '**', redirectTo: 'picture' }
+  { path: 'picture', component: PictureExampleComponent },
+  { path: 'collage', component: CollageExampleComponent },
+  { path: 'picture_edit', component: PictureEditExampleComponent },
+  { path: 'picture_list_edit', component: PictureListEditExampleComponent },
+  { path: '**', redirectTo: 'picture' },
 ];
 
 @NgModule({
-    imports: [
-        RouterModule.forRoot(appRoutes)
-    ],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

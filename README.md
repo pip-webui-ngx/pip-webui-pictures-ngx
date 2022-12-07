@@ -21,8 +21,8 @@ Images are essential for any application with graphical user interface. Pip.WebU
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/picture-view.png" style="display: block;">
-    <img src="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/picture-view.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/picture-view.png" style="display: block;">
+    <img src="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/picture-view.png"/>
 </a>
 
 ### Picture edit 
@@ -39,8 +39,8 @@ Template:
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/picture-edit.png" style="display: block;">
-    <img src="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/picture-edit.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/picture-edit.png" style="display: block;">
+    <img src="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/picture-edit.png"/>
 </a>
 
 ### Picture list 
@@ -65,8 +65,8 @@ sources: string[] = [
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/picture-list.png" style="display: block;">
-    <img src="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/picture-list.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/picture-list.png" style="display: block;">
+    <img src="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/picture-list.png"/>
 </a>
 
 ### Collage 
@@ -76,7 +76,7 @@ sources: string[] = [
 
 Template:
 ```html
-<pip-collage [srcs]="sources"></pip-collage>
+<pip-collage [sources]="sources"></pip-collage>
 ```
 
 Initialized data:
@@ -91,8 +91,8 @@ sources: string[] = [
 
 **Example on the image (7 pictures)**
 
-<a href="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/collage.png" style="display: block;">
-    <img src="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/collage.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/collage.png" style="display: block;">
+    <img src="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/collage.png"/>
 </a>
 
 ### Add image 
@@ -115,8 +115,8 @@ onImageLoad(results) {
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/add-image.png" style="display: block;">
-    <img src="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/add-image.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/add-image.png" style="display: block;">
+    <img src="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/add-image.png"/>
 </a>
 
 ## Dialogs
@@ -129,7 +129,7 @@ onImageLoad(results) {
 
 ```typescript
 import { MatDialog } from '@angular/material';
-import { PipCameraDialogComponent } from 'pip-webui2-pictures';
+import { PipCameraDialogComponent } from 'pip-webui-pictures-ngx';
 
 constructor(
         private dialog: MatDialog
@@ -150,8 +150,8 @@ constructor(
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/camera-dialog.png" style="display: block;">
-    <img src="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/camera-dialog.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/camera-dialog.png" style="display: block;">
+    <img src="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/camera-dialog.png"/>
 </a>
 
 ### Picture url dialog
@@ -162,7 +162,7 @@ constructor(
 
 ```typescript
 import { MatDialog } from '@angular/material';
-import { PipPictureUrlDialogComponent } from 'pip-webui2-pictures';
+import { PipPictureUrlDialogComponent } from 'pip-webui-pictures-ngx';
 
 constructor(
         private dialog: MatDialog
@@ -183,8 +183,8 @@ constructor(
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/picture-url-dialog.png" style="display: block;">
-    <img src="https://github.com/pip-webui2/pip-webui2-pictures/raw/master/doc/images/picture-url-dialog.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/picture-url-dialog.png" style="display: block;">
+    <img src="https://github.com/pip-webui2/pip-webui-pictures-ngx/raw/master/doc/images/picture-url-dialog.png"/>
 </a>
 
 ## Installation
@@ -192,9 +192,9 @@ constructor(
 To install this module using npm:
 
 ```bash
-npm install pip-webui2-pictures --save
+npm install pip-webui-pictures-ngx --save
 ```
 
 ## <a name="license"></a>License
 
-This module is released under [MIT license](License) and totally free for commercial and non-commercial use."# pip-webui2-pictures" 
+This module is released under [MIT license](License) and totally free for commercial and non-commercial use."# pip-webui-pictures-ngx" 

@@ -1,0 +1,14 @@
+{
+  "en": "English",
+  "ru": "Russian",
+  "title": "Pictures",
+  "examples": {
+    "empty_states": "Empty states",
+    "with_source_files": "With source files",
+    "with_letter_icon": "With letter icon",
+    "with_bad_source": "With bad source (fallback to icon or letter)",
+    "item": "item",
+    "items": "items",
+    "items_more_than_4": "items"
+  }
+}

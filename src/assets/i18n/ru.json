@@ -1,0 +1,14 @@
+{
+  "en": "Английский",
+  "ru": "Русский",
+  "title": "Pictures",
+  "examples": {
+    "empty_states": "Пустые состояния",
+    "with_source_files": "С исходными файлами",
+    "with_letter_icon": "С текстовой иконкой",
+    "with_bad_source": "С неверно заданным исходным файлом (fallback в иконку или текст)",
+    "item": "изображение",
+    "items": "изображения",
+    "items_more_than_4": "изображений"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "add-image": {
+    "from_camera": "From camera",
+    "from_link": "From picture's link",
+    "from_file": "From file"
+  },
+  "camera-dialog": {
+    "camera_error": "Camera initialization error",
+    "get_image_from_camera": "Get image from camera"
+  },
+  "picture-url-dialog": {
+    "cancel": "Cancel",
+    "get_image_from_url": "Get image from URL",
+    "insert": "Insert",
+    "url": "URL"
+  }
+}

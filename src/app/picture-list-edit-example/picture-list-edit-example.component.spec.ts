@@ -1,9 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { PipPictureListEditModule } from 'pip-webui2-pictures';
-
+import { TranslocoTestingModule } from '@ngneat/transloco';
+import { PipPictureListEditModule } from 'pip-webui-pictures-ngx';
 import { PictureListEditExampleComponent } from './picture-list-edit-example.component';
 
 describe('PictureListEditExampleComponent', () => {
@@ -13,15 +12,8 @@ describe('PictureListEditExampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [PictureListEditExampleComponent],
-      imports: [
-        NoopAnimationsModule,
-        CommonModule,
-        TranslateModule.forRoot(),
-
-        PipPictureListEditModule
-      ],
-    })
-      .compileComponents();
+      imports: [NoopAnimationsModule, CommonModule, TranslocoTestingModule, PipPictureListEditModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,36 +1,27 @@
-examples-list {
-    width: 300px;
-}
+:host {
+  .mat-sidenav-container {
+    height: calc(100% - 64px);
 
-.content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden
-}
+    .mat-sidenav-content {
+      display: flex;
+      flex-direction: column;
 
-::ng-deep .mat-toolbar .mat-select-value {
-    color: #fff !important;
-}
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow: auto;
 
-.router {
-    display: block;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 16px;
-    font-family: Roboto;
-}
-
-.example-appbar {
-    z-index: 10;
-    position: relative;
-}
-
-::ng-deep action-list-example,
-::ng-deep drilldown-list-example,
-::ng-deep date-example {
-    flex: 1 1 100%;
-    padding: 16px;
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 700px;
+        }
+      }
+    }
+  }
 }

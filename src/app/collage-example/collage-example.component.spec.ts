@@ -1,8 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
-import { PipCollageModule } from 'pip-webui2-pictures';
-
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { TranslocoTestingModule } from '@ngneat/transloco';
+import { PipCollageModule } from 'pip-webui-pictures-ngx';
 import { CollageExampleComponent } from './collage-example.component';
 
 describe('CollageExampleComponent', () => {
@@ -12,14 +11,8 @@ describe('CollageExampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [CollageExampleComponent],
-      imports: [
-        CommonModule,
-        TranslateModule.forRoot(),
-
-        PipCollageModule
-      ],
-    })
-      .compileComponents();
+      imports: [CommonModule, TranslocoTestingModule, PipCollageModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

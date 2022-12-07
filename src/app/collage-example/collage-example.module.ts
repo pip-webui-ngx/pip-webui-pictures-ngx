@@ -1,17 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
-import { PipCollageModule } from 'pip-webui2-pictures';
-
+import { NgModule } from '@angular/core';
+import { TranslocoModule } from '@ngneat/transloco';
+import { PipCollageModule } from 'pip-webui-pictures-ngx';
 import { CollageExampleComponent } from './collage-example.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    TranslateModule.forChild(),
-
-    PipCollageModule
-  ],
-  declarations: [CollageExampleComponent]
+  imports: [CommonModule, TranslocoModule, PipCollageModule],
+  declarations: [CollageExampleComponent],
 })
-export class CollageExampleModule { }
+export class CollageExampleModule {}

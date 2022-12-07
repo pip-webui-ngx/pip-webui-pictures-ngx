@@ -1,0 +1,13 @@
+@use 'node_modules/@angular/material' as mat;
+@use 'lib/picture/picture-theme';
+@use 'lib/picture-edit/picture-edit-theme';
+@use 'lib/picture-list-edit/picture-list-edit-theme';
+
+@mixin theme($theme-or-color-config) {
+  $theme: mat.private-legacy-get-theme($theme-or-color-config);
+  @include mat.private-check-duplicate-theme-styles($theme, 'pip-webui-pictures') {
+    @include picture-theme.theme($theme-or-color-config);
+    @include picture-edit-theme.theme($theme-or-color-config);
+    @include picture-list-edit-theme.theme($theme-or-color-config);
+  }
+}

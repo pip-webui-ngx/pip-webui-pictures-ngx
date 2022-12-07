@@ -1,0 +1,17 @@
+{
+  "add-image": {
+    "from_camera": "С камеры",
+    "from_link": "Из ссылки изображения",
+    "from_file": "Из файла"
+  },
+  "camera-dialog": {
+    "camera_error": "Получить изображение с камеры",
+    "get_image_from_camera": "Ошибка при инициализации камеры"
+  },
+  "picture-url-dialog": {
+    "cancel": "Отмена",
+    "get_image_from_url": "Получить изображение из ссылки",
+    "insert": "Вставить",
+    "url": "Ссылка"
+  }
+}

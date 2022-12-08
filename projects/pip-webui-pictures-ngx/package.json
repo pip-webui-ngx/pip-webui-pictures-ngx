@@ -1,6 +1,6 @@
 {
   "name": "pip-webui-pictures-ngx",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
     "@angular/core": "^14.2.12",
     "@angular/material": "^14.2.7",
     "@ngneat/transloco": "^4.1.1",
-    "pip-webui2-behaviors": "^14.0.0"
+    "pip-webui-behaviors-ngx": "^14.0.0"
   }
 }

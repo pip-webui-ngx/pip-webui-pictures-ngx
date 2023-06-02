@@ -40,6 +40,7 @@
     "@angular/platform-browser-dynamic": "^14.2.10",
     "@angular/router": "^14.2.10",
     "@ngneat/transloco": "^4.1.1",
+    "@ngx-translate/core": "^11.0.1",
     "core-js": "^2.5.4",
     "ngx-webcam": "^0.4.1",
     "pip-webui-behaviors-ngx": "^14.0.0",
